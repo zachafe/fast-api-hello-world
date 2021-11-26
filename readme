@@ -11,3 +11,7 @@ pip install fastapi uvicorn
 
 #INICIAR APP DESDE CONSOLA SERVER
 uvicorn main:app --reload
+
+
+token
+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
