@@ -1,0 +1,13 @@
+#PROYECTO DE APIS CON FAST-API
+
+#CREAR ENTORNO VIRTUAL
+python3 -m venv venv
+
+#ACTIVAR ENTORNO VIRTUAL
+source venv/bin/activate
+
+#INSTALAR FAST-API Y UVICORN
+pip install fastapi uvicorn
+
+#INICIAR APP DESDE CONSOLA SERVER
+uvicorn main:app --reload
