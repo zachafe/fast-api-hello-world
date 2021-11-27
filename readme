@@ -6,7 +6,7 @@ python3 -m venv venv
 #ACTIVAR ENTORNO VIRTUAL
 source venv/bin/activate
 
-#INSTALAR FAST-API Y UVICORN
+#INSTALAR FAST-API Y UVICORN ENTORNO VIRTAUL
 pip install fastapi uvicorn
 
 #INICIAR APP DESDE CONSOLA SERVER
