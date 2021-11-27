@@ -15,3 +15,4 @@ uvicorn main:app --reload
 
 token
 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
+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
