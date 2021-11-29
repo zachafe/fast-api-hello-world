@@ -87,12 +87,14 @@ def show_person (
         min_length=1,
         max_length=50,
         title="Person Name",
-        description="This is the person name, it,s between 1 and 50 charters"
+        description="This is the person name, it,s between 1 and 50 charters",
+        example = "Andres"
         ),
     age: str = Query(
         ...,
         title="Person Age",
-        description="This is the person age, it's requeri"
+        description="This is the person age, it's requeri",
+        example = 25
         )
 ):
     return {name:age}
@@ -101,7 +103,10 @@ def show_person (
 # Query(None, regex="^[a-z]{5}$")
 @app.get("/person/detail/{person_id}")
 def show_person (
-    person_id: int = Path (...,gt=0)
+    person_id: int = Path (
+        ...,
+        gt=0,
+        example=123)
 ):
     return {person_id:"existe"}
 
@@ -112,7 +117,8 @@ def update_person(
         ...,
         title ="Person ID",
         description ="This is the person Id",
-        gt = 0
+        gt = 0,
+        example = 123
     ),
     person: Person = Body(...),
     location: Location = Body(...)
