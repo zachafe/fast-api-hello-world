@@ -11,3 +11,6 @@ pip install fastapi uvicorn
 
 #INICIAR APP DESDE CONSOLA SERVER
 uvicorn main:app --reload
+
+#INSTALAR PARA FORMULARIO
+pip install python-multipart
