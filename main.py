@@ -77,6 +77,8 @@ class PersonOut(personBase):
 
 class LoginOut(BaseModel):
     username: str = Field(...,max_length=20,example="afquintero")
+    message: str = Field(default="Login Succesfully!")
+
     
 @app.get(
     path="/",
@@ -154,4 +156,4 @@ def login(
     username:str = Form(...),
     password:str = Form(...),
 ):
-    return LoginOut
+    return LoginOut(username=username)
